@@ -1,0 +1,75 @@
+@media (max-width: 500px) {
+    .responsive{
+        padding: 4px !important;
+        font-size: 0.8em !important;
+    }
+    
+}
+
+.margin{
+    margin: 0 !important;
+}
+
+.MuiTimePickerToolbar-root > .MuiGrid-root > .MuiButtonBase-root, 
+.MuiPickersToolbar-root > .MuiGrid-root > .MuiButtonBase-root {
+  display: none !important;
+}
+
+.ocultar{
+    display: none !important;
+}
+
+.btnHistoria {
+    background-color: #2c70b7 !important;
+    color: white !important;
+    font-family: 'Lato' !important;
+    font-size: .9em !important;
+    font-weight: 600 !important;
+    width: 100%;
+}
+
+.btnAvatar {
+    background-color: #2c70b7 !important;
+}
+
+.btnAzul {
+    background-color: #2c70b7 !important;
+}
+
+.btnAzulLetra {
+    color: #2c70b7 !important;
+}
+
+.imgModal {
+    max-height: 500px !important;
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+.crop {
+    width: 164px !important;
+    height: 164px !important;
+    overflow: hidden !important;
+}
+
+.crop img {
+    width: 164px !important;
+    height: 164px !important;
+    object-fit: cover !important;
+    border: 1px solid rgb(185, 183, 183) !important;
+    border-radius: 5px !important;
+}
+
+@media only screen and (min-width: 1280px) {
+    .inputGestion {
+        width: 15ch !important;
+    }
+
+} 
+
+@media only screen and (max-width: 1279px) {
+    .inputGestion {
+        width: 100% !important;
+    }
+
+} 

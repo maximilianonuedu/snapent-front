@@ -1,0 +1,48 @@
+header {
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+header .MuiButton-startIcon{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.padding{
+    padding: 10px !important;
+    margin: 10px !important;
+    border: 1px solid black !important;
+
+}
+.MuiPaper-root{
+    background-color: none!important;
+}
+
+.isologo{
+    width: 80px !important;
+    height: auto;
+    display: none;
+}
+
+.logo{
+    display: flex;
+}
+header .logo img {
+    width: 150px;
+}
+
+@media screen and (max-width: 600px) {
+    .logo{
+        display:none;
+    }
+    .isologo{
+        display:flex;
+    }
+    header .isologo img {
+        width: 80px;
+    }
+}

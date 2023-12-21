@@ -1,0 +1,5 @@
+.hedearTitulos{
+    background-image: url('./../../assets/imgs/header-titulos.jpg') !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}

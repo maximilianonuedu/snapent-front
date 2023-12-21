@@ -1,0 +1,120 @@
+.login{
+    background-color: white !important;
+    min-height: 100vh;
+    background-image: url('../../src/assets/imgs/backgroundLogin.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-profesional{
+    background-color: white !important;
+    min-height: 100vh;
+    background-image: url('../../src/assets/imgs/profesionalLogin.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.fondo-sidebar{
+    background-color: white !important;
+    min-height: 100vh;
+    background-image: url('../../src/assets/imgs/sidebar-background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buscador{
+    background-color: white !important;
+    min-height: 100vh;
+    background-image: url('../../src/assets/imgs/fondo-principal.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.BoxLogin{
+    border-radius: 8px;
+    display: flex;
+    width: 80%;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: inherit;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 1px -2px 8px 0px rgba(0,0,0,0.53);
+    -webkit-box-shadow: 1px -2px 8px 0px rgba(0,0,0,0.53);
+    -moz-box-shadow: 1px -2px 8px 0px rgba(0,0,0,0.53);
+}
+
+.boton-vertical{
+    transform: rotate(-90deg);
+    display: flex;
+    flex-grow: 1;
+}
+
+.landing{
+    background-color: white !important;
+    min-height: 100vh;
+    background-image: url('../../src/assets/imgs/fondolandig.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apartado1{
+    background-color: white !important;
+    min-height: 100vh;
+    background-image: url('../../src/assets/imgs/apartado1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apartado2{
+    background-color: white !important;
+    min-height: 100vh;
+    background-image: url('../../src/assets/imgs/apartado2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apartado3{
+    background-color: white !important;
+    min-height: 100vh;
+    background-image: url('../../src/assets/imgs/apartado3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 600px) {
+    .BoxLogin{
+        display: flex;
+        width: 70%;
+        background-color: #fff;
+        box-shadow: inherit;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        box-shadow: 1px -2px 8px 0px rgba(0,0,0,0.53);
+        -webkit-box-shadow: 1px -2px 8px 0px rgba(0,0,0,0.53);
+        -moz-box-shadow: 1px -2px 8px 0px rgba(0,0,0,0.53);
+    }
+  }
