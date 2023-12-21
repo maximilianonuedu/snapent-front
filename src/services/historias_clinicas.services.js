@@ -3,7 +3,7 @@ import { puerto } from '../../global/puerto.js';
 const token = localStorage.getItem('token');
 
 async function traerHistoriasPorProfesional(id) {
-    return fetch(`http://localhost:${puerto}/api/historiasClinicas/${id}`, {
+    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/historiasClinicas/${id}`, {
         method:'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -20,7 +20,7 @@ async function traerHistoriasPorProfesional(id) {
 }
 
 async function traerHistoriasPorPaciente(id, idProfesional) {
-    return fetch(`http://localhost:${puerto}/api/historiasClinicas/paciente/${id}/${idProfesional}`, {
+    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/historiasClinicas/paciente/${id}/${idProfesional}`, {
         method:'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -37,7 +37,7 @@ async function traerHistoriasPorPaciente(id, idProfesional) {
 }
 
 async function crearHistoriaClinica(datos) {
-    return fetch(`http://localhost:${puerto}/api/historiasClinicas`, {
+    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/historiasClinicas`, {
         method:'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -57,7 +57,7 @@ async function crearHistoriaClinica(datos) {
 }
 
 async function traerHistoriasPorID(id) {
-    return fetch(`http://localhost:${puerto}/api/historiasClinicas/paciente/${id}`, {
+    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/historiasClinicas/paciente/${id}`, {
         method:'GET',
         headers: {
             'Content-Type': 'application/json',

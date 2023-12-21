@@ -3,7 +3,7 @@ import { puerto } from '../../global/puerto.js';
 const token = localStorage.getItem('token');
 
 async function traerConsultorios() {
-    return fetch(`http://localhost:${puerto}/api/consultorios`, {
+    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/consultorios`, {
         method:'GET',
         headers: {
             'Content-Type': 'application/json'
@@ -20,7 +20,7 @@ async function traerConsultorios() {
 
 async function traerConsultorioPorId(id) {
 
-    return fetch(`http://localhost:${puerto}/api/consultorios/${id}`, {
+    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/consultorios/${id}`, {
         method:'GET',
         headers: {
             'Content-Type': 'application/json',

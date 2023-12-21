@@ -1,7 +1,7 @@
 import { puerto } from '../../global/puerto.js';
 
 async function traerEspecialidades() {
-    return fetch(`http://localhost:${puerto}/api/especialidades`, {
+    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/especialidades`, {
         method:'GET',
         headers: {
             'Content-Type': 'application/json'
@@ -17,7 +17,7 @@ async function traerEspecialidades() {
 }
 
 async function traerSubespecialidades(especialidad) {
-    return fetch(`http://localhost:2023/api/especialidades?nombre=${especialidad}`, {
+    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/especialidades?nombre=${especialidad}`, {
         method:'GET',
         headers: {
             'Content-Type': 'application/json'
