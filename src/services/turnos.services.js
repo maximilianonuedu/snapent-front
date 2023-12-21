@@ -3,7 +3,7 @@ import { puerto } from '../../global/puerto.js';
 const token = localStorage.getItem('token');
 
 async function reservar(turno) {
-    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/turnos`, {
+    return fetch(`https://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/turnos`, {
         method:'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -37,7 +37,7 @@ async function traerTurnos(id_profesional) {
         parametro = 'id_profesional';
     }
 
-    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/turnos?${parametro}=${idProfesional}`, {
+    return fetch(`https://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/turnos?${parametro}=${idProfesional}`, {
         method:'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -56,7 +56,7 @@ async function traerTurnos(id_profesional) {
 }
 
 async function cancelarTurno(id) {
-    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/turnos/${id}`, {
+    return fetch(`https://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/turnos/${id}`, {
         method:'DELETE',
         headers: {
             'Content-Type': 'application/json',
@@ -75,7 +75,7 @@ async function cancelarTurno(id) {
 
 async function traerTurnosPorID(id) {
 
-    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/turnos/${id}`, {
+    return fetch(`https://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/turnos/${id}`, {
         method:'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -94,7 +94,7 @@ async function traerTurnosPorID(id) {
 }
 
 async function guardarTurno(turno) {
-    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/turnos/cancelarTurno`, {
+    return fetch(`https://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/turnos/cancelarTurno`, {
         method:'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -115,7 +115,7 @@ async function guardarTurno(turno) {
 
 async function traerTurnosCanceladosPorID(id) {
 
-    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/turnos/cancelarTurno/${id}`, {
+    return fetch(`https://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/turnos/cancelarTurno/${id}`, {
         method:'GET',
         headers: {
             'Content-Type': 'application/json',

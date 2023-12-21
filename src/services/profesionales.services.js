@@ -4,7 +4,7 @@ const token = localStorage.getItem('token');
 
 async function traerProfesionales(nombre, especialidad, obras_sociales) {
 
-    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/profesionales?nombre=${nombre}&especialidad=${especialidad}&obras_sociales=${obras_sociales}`, {
+    return fetch(`https://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/profesionales?nombre=${nombre}&especialidad=${especialidad}&obras_sociales=${obras_sociales}`, {
         method:'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -22,7 +22,7 @@ async function traerProfesionales(nombre, especialidad, obras_sociales) {
 }
 
 async function traerProfesionalPorId(id) {
-    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/profesionales/${id}`, {
+    return fetch(`https://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/profesionales/${id}`, {
         method:'GET',
         headers: {
             'Content-Type': 'application/json'
@@ -38,7 +38,7 @@ async function traerProfesionalPorId(id) {
 }
 
 async function editar(id, nombre, apellido, matricula, email, especialidad, subespecialidad, consultorio) {
-    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/profesionales/${id}`, {
+    return fetch(`https://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/profesionales/${id}`, {
         method:'PATCH',
         headers: {
             'Content-Type': 'application/json',
@@ -63,7 +63,7 @@ async function editar(id, nombre, apellido, matricula, email, especialidad, sube
 }
 
 async function eliminar(id) {
-    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/profesionales/${id}`, {
+    return fetch(`https://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/profesionales/${id}`, {
         method:'DELETE',
         headers: {
             'Content-Type': 'application/json',
@@ -81,7 +81,7 @@ async function eliminar(id) {
 }
 
 async function registro(nombre, apellido, email, clave, matricula, especialidad, subespecialidad, consultorio, avatar, color_avatar) {
-    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/profesionales`, {
+    return fetch(`https://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/profesionales`, {
         method:'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -103,7 +103,7 @@ async function registro(nombre, apellido, email, clave, matricula, especialidad,
 }
 
 async function logout(token) {
-    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/profesionales/logout`, {
+    return fetch(`https://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/profesionales/logout`, {
         method:'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -121,7 +121,7 @@ async function logout(token) {
 }
 
 async function eliminarObraSocial(nombre, id) {
-    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/profesionales/obrasocial/${id}`, {
+    return fetch(`https://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/profesionales/obrasocial/${id}`, {
         method:'DELETE',
         headers: {
             'Content-Type': 'application/json',
@@ -140,7 +140,7 @@ async function eliminarObraSocial(nombre, id) {
 }
 
 async function agregarObraSocial(nombre, id) {
-    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/profesionales/obrasocial/${id}`, {
+    return fetch(`https://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/profesionales/obrasocial/${id}`, {
         method:'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -163,7 +163,7 @@ async function agregarObraSocial(nombre, id) {
 }
 
 async function traerDisponibilidadHorariaPorID(id) {
-    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/profesionales/disponibilidad/${id}`, {
+    return fetch(`https://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/profesionales/disponibilidad/${id}`, {
         method:'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -180,7 +180,7 @@ async function traerDisponibilidadHorariaPorID(id) {
 }
 
 async function editarDisponibilidadHoraria(id, dia, horaInicio, horaFin, deshabilitado) {
-    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/profesionales/disponibilidad/${id}`, {
+    return fetch(`https://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/profesionales/disponibilidad/${id}`, {
         method:'PATCH',
         headers: {
             'Content-Type': 'application/json',

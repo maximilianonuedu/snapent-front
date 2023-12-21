@@ -4,7 +4,7 @@ const token = localStorage.getItem('token');
 
 async function traerUsuarioPorId(id) {
 
-    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/usuarios/${id}`, {
+    return fetch(`https://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/usuarios/${id}`, {
         method:'GET',
         headers: {
             'Content-Type': 'application/json'
@@ -20,7 +20,7 @@ async function traerUsuarioPorId(id) {
 }
 
 async function editar(id, nombre, apellido, email, telefono, fecha_de_nacimiento, DNI, obra_social, peso, altura) {
-    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/usuarios/${id}`, {
+    return fetch(`https://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/usuarios/${id}`, {
         method:'PATCH',
         headers: {
             'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ async function editar(id, nombre, apellido, email, telefono, fecha_de_nacimiento
 }
 
 async function eliminar(id) {
-    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/usuarios/${id}`, {
+    return fetch(`https://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/usuarios/${id}`, {
         method:'DELETE',
         headers: {
             'Content-Type': 'application/json',
@@ -61,7 +61,7 @@ async function eliminar(id) {
 }
 
 async function registro (nombre, apellido, email, clave, telefono, fecha_de_nacimiento, DNI, obra_social, avatar, color_avatar, peso, altura) {
-    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/usuarios`, {
+    return fetch(`https://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/usuarios`, {
         method:'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -83,7 +83,7 @@ async function registro (nombre, apellido, email, clave, telefono, fecha_de_naci
 }
 
 async function logout(token) {
-    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/usuarios/logout`, {
+    return fetch(`https://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/usuarios/logout`, {
         method:'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -101,7 +101,7 @@ async function logout(token) {
 }
 
 async function editarPesoAltura(id, peso, altura) {
-    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/usuarios/historiaClinica/${id}`, {
+    return fetch(`https://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/usuarios/historiaClinica/${id}`, {
         method:'PATCH',
         headers: {
             'Content-Type': 'application/json',

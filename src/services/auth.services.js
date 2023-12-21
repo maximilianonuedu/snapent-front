@@ -3,7 +3,7 @@ import { puerto } from '../../global/puerto.js';
 const token = localStorage.getItem('token');
 
 async function login(email, clave) {
-    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/usuarios/login`, {
+    return fetch(`https://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/usuarios/login`, {
         method:'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -25,7 +25,7 @@ async function login(email, clave) {
 }
 
 async function loginProfesional(email, clave) {
-    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/profesionales/login`, {
+    return fetch(`https://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/profesionales/login`, {
         method:'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -48,7 +48,7 @@ async function loginProfesional(email, clave) {
 
 async function actualizarClave(coleccion, id, claveActual, claveNueva, claveNuevaRep) {
     
-    return fetch(`http://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/auth/clave/${id}`, {
+    return fetch(`https://snapent-back-863yvp5b1-maximilianonuedu.vercel.app/api/auth/clave/${id}`, {
         method:'PATCH',
         headers: {
             'Content-Type': 'application/json',
